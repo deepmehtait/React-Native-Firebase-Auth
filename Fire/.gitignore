@@ -35,6 +35,9 @@ local.properties
 node_modules/
 npm-debug.log
 
+# Firebase Configs
+src/firebase-config.js
+
 # BUCK
 buck-out/
 \.buckd/
