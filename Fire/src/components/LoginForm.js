@@ -31,9 +31,10 @@ class LoginForm extends Component {
     });
   }
 
-onLoginError() {
+onLoginError(err) {
+  console.log('err', err);
   this.setState({
-    error: 'Authentication Failed',
+    error: `Authentication Failed-${err.message}`,
     loading: false,
     password: '',
   });
